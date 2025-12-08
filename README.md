@@ -172,12 +172,16 @@ This kit's content is intended to be copied and adapted.
 - [docs/changelog.md](docs/changelog.md)
 - [docs/releases.md](docs/releases.md)
 - [docs/governance.md](docs/governance.md)
+- [docs/branch-protection.md](docs/branch-protection.md)
 
 **Templates**
 - [templates/*.template.md](templates/)
 
 **GitHub Templates**
 - [.github/](.github/)
+
+**Branch Protection Rulesets**
+- [rulesets/](rulesets/) - Ready-to-import JSON rulesets
 
 ## Maintainer
 
