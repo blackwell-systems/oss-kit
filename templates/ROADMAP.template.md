@@ -137,10 +137,10 @@ Based on GitHub issue votes:
 
 | Platform | Status | Notes |
 |----------|--------|-------|
-| Linux | ✅ Supported | All major distributions |
-| macOS | ✅ Supported | macOS 11+ |
-| Windows | ✅ Supported | Windows 10+ |
-| FreeBSD | ⚠️ Community | Best effort support |
+| Linux | Supported | All major distributions |
+| macOS | Supported | macOS 11+ |
+| Windows | Supported | Windows 10+ |
+| FreeBSD | Community | Best effort support |
 
 ### Planned Support
 

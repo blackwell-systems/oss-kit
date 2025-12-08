@@ -4,11 +4,11 @@
 
 We release security updates for the following versions:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.x.x   | :white_check_mark: |
-| 0.9.x   | :white_check_mark: |
-| < 0.9   | :x:                |
+| Version | Supported |
+| ------- | --------- |
+| 1.x.x   | Yes       |
+| 0.9.x   | Yes       |
+| < 0.9   | No        |
 
 ## Reporting a Vulnerability
 

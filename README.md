@@ -166,6 +166,25 @@ See [Docsify documentation](https://docsify.js.org/#/) for themes, plugins, and 
 Use whatever license you want for your own repos.
 This kit's content is intended to be copied and adapted.
 
+## Claude Code Skill
+
+This repository includes a **Release Engineer skill** for Claude Code that helps automate and guide the release process:
+
+**Skill:** [.claude/skills/release-engineer.md](.claude/skills/release-engineer.md)
+
+Invoke with: `@release-engineer` or via the skills menu in Claude Code
+
+**Capabilities:**
+- Guides through semantic versioning decisions
+- Updates CHANGELOG.md with proper formatting
+- Creates git tags with release notes
+- Builds and verifies release artifacts
+- Publishes to package registries
+- Creates GitHub releases
+- Provides rollback procedures
+
+Perfect for maintaining consistent release quality across projects.
+
 ## Contents
 
 **Reference**
@@ -184,6 +203,9 @@ This kit's content is intended to be copied and adapted.
 
 **Branch Protection Rulesets**
 - [rulesets/](rulesets/) - Ready-to-import JSON rulesets
+
+**Claude Skills**
+- [.claude/skills/release-engineer.md](.claude/skills/release-engineer.md) - Release automation guide
 
 ## Maintainer
 
