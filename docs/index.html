@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blackwell OSS Kit - Open source project templates and standards</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Copy/paste templates, best practice guides, and GitHub rulesets for professional open source projects.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://blackwell-systems.github.io/blackwell-docs-theme/docsify.css">
+  <style>
+    /* Theme color variables - customize these to change accent colors */
+    :root {
+      --theme-color: #4a9eff;
+      --theme-color-dark: #2d7dd2;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading...</div>
+  <script>
+    window.$docsify = {
+      name: 'Blackwell OSS Kit',
+      nameLink: '#/',
+      repo: 'blackwell-systems/oss-kit',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      coverpage: true,
+      onlyCover: false,
+      executeScript: true,
+      maxLevel: 4,
+
+      // Search configuration
+      search: {
+        maxAge: 86400000, // 1 day
+        paths: 'auto',
+        placeholder: 'Search...',
+        noData: 'No results!',
+        depth: 6,
+        hideOtherSidebarContent: false,
+      },
+
+      // Copy code configuration
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied!'
+      },
+
+      // Pagination
+      pagination: {
+        previousText: 'Previous',
+        nextText: 'Next',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+
+      // Theme color
+      themeColor: '#4a9eff',
+
+      // Tabs
+      tabs: {
+        persist: true,
+        sync: true,
+        theme: 'classic',
+        tabComments: true,
+        tabHeadings: true
+      },
+
+      // Footer
+      plugins: [
+        function(hook, vm) {
+          hook.beforeEach(function(html) {
+            return html + '\n\n----\n\n' +
+              '<div style="text-align: center; color: #666; font-size: 0.85em; padding: 1.5em 0;">' +
+              '<a href="https://github.com/blackwell-systems/oss-kit">GitHub</a> · ' +
+              '<a href="https://github.com/blackwell-systems/oss-kit/blob/main/LICENSE">MIT</a>' +
+              '</div>';
+          });
+        }
+      ]
+    }
+  </script>
+
+  <!-- Docsify core -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- Search plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+  <!-- Copy code plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+
+  <!-- Pagination plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+
+  <!-- Tabs plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+  <!-- Zoom image -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+  <!-- Syntax highlighting -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
+
+  <!-- External link icon -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+</body>
+</html>
