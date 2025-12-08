@@ -1,5 +1,9 @@
 # Blackwell OSS Kit
 
+[![Blackwell Systems™](https://raw.githubusercontent.com/blackwell-systems/blackwell-docs-theme/main/badge-trademark.svg)](https://github.com/blackwell-systems)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/Sponsor-Buy%20Me%20a%20Coffee-yellow?logo=buy-me-a-coffee&logoColor=white)](https://buymeacoffee.com/blackwellsystems)
+
 A small, opinionated collection of standards, templates, and checklists for shipping trustworthy open source repositories.
 
 This repo is designed to be:
@@ -33,7 +37,7 @@ Two things in one place:
 
 ## Why This Exists
 
-Most repos fail because the basics are missing or inconsistent:
+Many open source projects struggle with the basics:
 - unclear contribution path
 - no security contact
 - no release discipline
@@ -68,16 +72,85 @@ If you want the simplest credible baseline, include:
 - Pull request template
 - Issue templates
 
-## Philosophy
+## Documentation with Docsify
 
-This kit intentionally avoids heavy policy.
-It assumes:
+For projects that grow beyond a single README, we recommend [Docsify](https://docsify.js.org/) for documentation sites:
 
-- one or a few maintainers
-- fast iteration
-- minimal governance until adoption demands more
+### Why Docsify?
 
-The goal is to reduce friction, not add bureaucracy.
+- **No build step** - Runs entirely in browser
+- **Markdown files** - Keep docs in your repo
+- **Zero config** - Works out of the box
+- **GitHub Pages ready** - Deploy instantly
+- **Themeable** - Easy to brand
+
+### Quick Setup
+
+```bash
+# In your project root
+mkdir docs
+cd docs
+
+# Create docs homepage
+cat > README.md << 'EOF'
+# Project Documentation
+
+Welcome to the docs!
+EOF
+
+# Create index.html
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Project Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Project Name',
+      repo: 'https://github.com/yourorg/yourproject',
+      loadSidebar: true,
+      subMaxLevel: 2,
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+</html>
+EOF
+
+# Create sidebar
+cat > _sidebar.md << 'EOF'
+- [Home](/)
+- [Getting Started](getting-started.md)
+- [API Reference](api-reference.md)
+EOF
+
+# Serve locally
+npx docsify-cli serve docs
+# Visit http://localhost:3000
+```
+
+### Deploy to GitHub Pages
+
+1. Push `docs/` folder to your repo
+2. Go to Settings → Pages
+3. Select branch and `/docs` folder
+4. Save
+
+Your docs are now live at `https://yourorg.github.io/yourproject/`
+
+### Example Projects Using Docsify
+
+- [Vaultmux](https://blackwell-systems.github.io/vaultmux/) - Multi-vault secret management
+- [Dotfiles](https://blackwell-systems.github.io/dotfiles/) - Dotfiles management framework
+- This project's documentation (coming soon)
+
+See [Docsify documentation](https://docsify.js.org/#/) for themes, plugins, and advanced features.
 
 ## Roadmap
 
