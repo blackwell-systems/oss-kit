@@ -185,24 +185,6 @@ This kit's content is intended to be copied and adapted.
 **Branch Protection Rulesets**
 - [rulesets/](rulesets/) - Ready-to-import JSON rulesets
 
-## GitHub Repository Setup
-
-For maximum discoverability, configure your repository with:
-
-**About Section:**
-- Clear, keyword-rich description
-- Website URL
-- Topics/tags (see below)
-
-**Recommended Topics:**
-```
-open-source, templates, github, best-practices, documentation,
-contributing, security, changelog, readme, governance, maintainer-tools,
-repository-standards, project-templates, oss, code-standards
-```
-
-Add topics via: Repository Settings → About → Topics
-
 ## Maintainer
 
 **Blackwell Systems**
