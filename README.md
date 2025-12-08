@@ -1,10 +1,12 @@
 # Blackwell OSS Kit
 
+> **Open source project templates, best practices, and GitHub repository standards for maintainers**
+
 [![Blackwell Systems™](https://raw.githubusercontent.com/blackwell-systems/blackwell-docs-theme/main/badge-trademark.svg)](https://github.com/blackwell-systems)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Buy%20Me%20a%20Coffee-yellow?logo=buy-me-a-coffee&logoColor=white)](https://buymeacoffee.com/blackwellsystems)
 
-A small, opinionated collection of standards, templates, and checklists for shipping trustworthy open source repositories.
+A collection of **copy/paste templates**, **best practice guides**, and **GitHub rulesets** for shipping professional open source projects. Includes README templates, CHANGELOG formats, CONTRIBUTING guides, SECURITY policies, branch protection rules, and documentation standards.
 
 This repo is designed to be:
 - **Fast to adopt** (copy/paste templates in minutes)
@@ -182,6 +184,24 @@ This kit's content is intended to be copied and adapted.
 
 **Branch Protection Rulesets**
 - [rulesets/](rulesets/) - Ready-to-import JSON rulesets
+
+## GitHub Repository Setup
+
+For maximum discoverability, configure your repository with:
+
+**About Section:**
+- Clear, keyword-rich description
+- Website URL
+- Topics/tags (see below)
+
+**Recommended Topics:**
+```
+open-source, templates, github, best-practices, documentation,
+contributing, security, changelog, readme, governance, maintainer-tools,
+repository-standards, project-templates, oss, code-standards
+```
+
+Add topics via: Repository Settings → About → Topics
 
 ## Maintainer
 
