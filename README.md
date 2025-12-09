@@ -8,15 +8,7 @@
 
 A collection of **copy/paste templates**, **best practice guides**, and **GitHub rulesets** for shipping professional open source projects. Includes README templates, CHANGELOG formats, CONTRIBUTING guides, SECURITY policies, branch protection rules, and documentation standards.
 
-This repo is designed to be:
-- **Fast to adopt** (copy/paste templates in minutes)
-- **Low ceremony** (no process theater)
-- **Consistent** (predictable structure across repos)
-- **Tool-friendly** (ready to be integrated into future scaffolding)
-
 ## What This Is
-
-Two things in one place:
 
 1) **Reference**
    Short guides explaining:
