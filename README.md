@@ -142,8 +142,7 @@ Your docs are now live at `https://yourorg.github.io/yourproject/`
 
 - [Vaultmux](https://blackwell-systems.github.io/vaultmux/) - Multi-vault secret management
 - [Dotfiles](https://blackwell-systems.github.io/dotfiles/) - Dotfiles management framework
-- This project's documentation (coming soon)
-
+  
 See [Docsify documentation](https://docsify.js.org/#/) for themes, plugins, and advanced features.
 
 ## Roadmap
